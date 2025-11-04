@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    width: 25vw;
+    animation: rotate 20s linear infinite;
+    margin: 10px;
+}
+
+.figure-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.list-navigation li, a{
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: 0.3s;
+} 
+
+.list-navigation a.active {
+    background: linear-gradient(45deg, #2764de, #037c42);
+    color: white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.header {
+    box-shadow: 0px 0px 15px 0px;
+}
+
+
+
+
