@@ -5,6 +5,14 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root {
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: white;
+}
+
 .logo {
     width: 25vw;
     animation: rotate 20s linear infinite;
@@ -27,7 +35,8 @@
 }
 
 .list-navigation li, a{
-    padding: 15px;
+    margin: 15px 0px;
+    padding: 10px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     list-style: none;
@@ -46,6 +55,79 @@
 .header {
     box-shadow: 0px 0px 15px 0px;
 }
+
+.main-content {
+    background: linear-gradient(to bottom right, #3068d8, #037c42);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+}
+
+.main-image {
+    width: 90vw;
+    margin: 20px;
+    padding: 10px;
+}
+
+img {
+    border-radius: 15px;
+}
+
+.main-text {
+    color: rgb(255, 213, 2);
+    text-align: left;
+    font-size: large;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.subtext {
+    margin: 20px;
+    color: white;
+    font-style: italic;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.welcome-section img{
+    width: 50vw;
+    box-shadow: -15px -15px 0px 0px #3068d8;
+    margin-top: 20px;
+}
+
+.welcome-text {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px;
+    border: 3px solid #037c42;
+    width: 80vw;
+}
+
+.nav-footer {
+    background-color: #1a54ab;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nav-footer img{
+    width: 50px;
+}
+
+
 
 
 
