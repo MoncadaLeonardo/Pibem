@@ -6,15 +6,16 @@
 }
 
 :root {
-    background-color: #f5f5f5;
+    background-color: #f1ecec;
 }
 
 .header {
     background-color: white;
+    box-shadow: 0px 0px 15px 0px;
 }
 
 .logo {
-    width: 25vw;
+    width: 120px;
     animation: rotate 20s linear infinite;
     margin: 10px;
 }
@@ -34,30 +35,45 @@
     gap: 15px;
 }
 
-.list-navigation li, a{
-    margin: 15px 0px;
-    padding: 10px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+.list-navigation li {
     list-style: none;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    transition: 0.3s;
-} 
-
-.list-navigation a.active {
-    background: linear-gradient(45deg, #2764de, #037c42);
-    color: white;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    animation: pulse 1.5s ease-in-out infinite;
 }
 
-.header {
-    box-shadow: 0px 0px 15px 0px;
+.list-navigation a{
+    display: inline-block;
+    margin: 15px 0px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+.active {
+    display: inline-block;
+    background: linear-gradient(45deg, #2764de, #037c42);
+    color: white;
+    transition: 0.3s;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+a {
+    color: black;
 }
 
 .main-content {
-    background: linear-gradient(to bottom right, #3068d8, #037c42);
+    background: linear-gradient(to bottom right, #3445FA, #5934FA);
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -76,12 +92,28 @@ img {
     border-radius: 15px;
 }
 
+.slogan-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-text {
-    color: rgb(255, 213, 2);
+    color: white;
     text-align: left;
     font-size: large;
     padding: 10px;
     margin: 0px 10px;
+}
+
+.vl {
+    border-left: 2px solid white;
+    height: 200px;
+    position: static;
+    left: 50%;
+    margin-left: -10px;
+    top: 0;
 }
 
 .subtext {
@@ -98,8 +130,20 @@ img {
     margin: 20px;
 }
 
+.pastor-picture {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pastor-text {
+    margin-left: 10px;
+}
+
 .welcome-section img{
-    width: 50vw;
+    width: 200px;
     box-shadow: -15px -15px 0px 0px #3068d8;
     margin-top: 20px;
 }
@@ -109,9 +153,9 @@ img {
     padding: 20px;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: white;
-    box-shadow: 0px 0px 10px 0px;
-    border: 3px solid #037c42;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -5px 0px 0px 0px #037c42;
+    border: 3px solid white;
     width: 80vw;
 }
 
@@ -121,14 +165,9 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
+    padding: 10px;
 }
 .nav-footer img{
     width: 50px;
 }
-
-
-
-
-
-
