@@ -6,16 +6,23 @@
 }
 
 :root {
-    background-color: #f5f5f5;
+    background-color: #f1ecec;
 }
 
 .header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+} 
+
+.navigation {
     background-color: white;
     box-shadow: 0px 0px 15px 0px;
 }
 
 .logo {
-    width: 120px;
+    width: 100px;
     animation: rotate 20s linear infinite;
     margin: 10px;
 }
@@ -25,45 +32,55 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    background: linear-gradient(45deg, #182c53, #0967d2);
 }
 
 .navigation ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 15px;
 }
 
 .list-navigation li {
     list-style: none;
 }
 
+.icons {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
 .list-navigation a{
     display: inline-block;
     margin: 15px 0px;
-    padding: 15px;
+    padding: auto;
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 10px;
-} 
+}
 
 @keyframes pulse {
     0% {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.1); /* crece */
+        transform: scale(1.1); 
     }
     100% {
-        transform: scale(1); /* vuelve a su tamaño normal */
+        transform: scale(1); 
     }
 }
 
 .active {
     display: inline-block;
-    background: linear-gradient(45deg, #2764de, #037c42);
+    background: linear-gradient(45deg, #1144dd, #086d30);
     color: white;
     transition: 0.3s;
     animation: pulse 2s ease-in-out infinite;
+}
+
+a {
+    color: black;
 }
