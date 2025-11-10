@@ -49,15 +49,14 @@
 .icons {
     width: 60px;
     height: 60px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .list-navigation a{
     display: inline-block;
-    margin: 15px 0px;
+    margin: 5px 0px;
     padding: auto;
     text-decoration: none;
-    font-size: 1.2rem;
     border-radius: 10px;
 }
 
