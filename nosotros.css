@@ -2,11 +2,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat';
 }
 
 :root {
-    background-color: #f1ecec;
+    background-color: #ffffff;
 }
 
 .header {
@@ -22,7 +22,7 @@
 }
 
 .logo {
-    width: 100px;
+    width: 80px;
     animation: rotate 20s linear infinite;
     margin: 10px;
 }
@@ -47,14 +47,14 @@
 }
 
 .icons {
-    width: 60px;
-    height: 60px;
-    padding: 15px;
+    width: 45px;
+    height: 45px;
+    padding: 8px;
 }
 
 .list-navigation a{
     display: inline-block;
-    margin: 5px 0px;
+    margin: 10px 0px;
     padding: auto;
     text-decoration: none;
     border-radius: 10px;
@@ -84,25 +84,19 @@ a {
     color: black;
 }
 
-.main-content {
-    margin: 20px auto;
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90vw;
-    border: 1px solid #2d196e;
-    border-radius: 10px;
-    background-color: whitesmoke;
 }
 
-.cards {
+.main-content {
+    padding: 10px;
     margin: 20px;
-    padding: 15px;
-    border-radius: 15px;
-    border: 1px solid #2d196e;
-    background-color: white;
-    box-shadow: 0px 0px 5px 1px;
+    width: 90vw;
+    border-radius: 10px;
+    background-color: whitesmoke;
 }
 
 @keyframes bounce {
@@ -115,29 +109,67 @@ a {
 }
 
 .text-header {
-    text-align: left;
-    padding: 0px 15px;
-    background: linear-gradient(45deg, #2764de, #037c42);
     color: white;
+    animation: bounce 3s ease infinite; 
+    background: linear-gradient(45deg, #2764de, #037c42);
     border-radius: 10px;
-    width: 100%;
-    animation: bounce 3s ease infinite;
+    margin: 15px 0;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.desplegable {
+    background: none;
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.desplegable-header {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.desplegable-header:hover {
+    color: rgb(12, 160, 252)
+}
+
+.arrow {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.desplegable.activo .arrow {
+    color: #007bff;
+}
+
+.desplegable-contenido {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.desplegable-contenido {
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+.desplegable.activo .desplegable-contenido {
+    max-height: 500px;
+
 }
 
 #historical-review {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 30px auto;
+    text-align: center;
 }
 
 .link-pdf {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 330px;
-    height: 60px;
+    display: inline-block;
     background-color: #037c42;
     text-align: center;
     color: white;
@@ -145,4 +177,36 @@ a {
     text-decoration: none;
     border-radius: 10px;
     margin: 10px;
+    width: 330px;
+    height: 60px;
+    line-height: 58px;
+}
+
+.pastors {
+    border: 1px solid rgb(173, 166, 166);
+    border-radius: 10px;
+}
+
+.pastors-header {
+    text-align: center;
+    margin: 15px;
+}
+
+.pastors-picture img{
+    width: 35vw;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.pastors-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pastors-picture p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: oblique;
 }
