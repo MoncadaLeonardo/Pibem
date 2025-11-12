@@ -185,17 +185,23 @@ a {
 .pastors {
     border: 1px solid rgb(173, 166, 166);
     border-radius: 10px;
+    margin: 20px 0px;
+    padding: 10px;
 }
 
 .pastors-header {
     text-align: center;
     margin: 15px;
+    text-shadow: 2px 7px 15px rgb(74, 74, 77);
 }
 
 .pastors-picture img{
     width: 35vw;
     border-radius: 10px;
     margin: 20px;
+    box-shadow: 1px 1px 10px 3px black;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .pastors-picture {
